@@ -1,4 +1,6 @@
+import { Navbar } from "@/components/navbar";
 import "@/styles/globals.css";
+import { Provider as JotaiProvider } from "jotai";
 
 export default function RootLayout({
   children,
@@ -69,7 +71,12 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#121212" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body>{children}</body>
+      <body className="bg-dark p-14 text-white">
+        <JotaiProvider>
+          <Navbar />
+          {children}
+        </JotaiProvider>
+      </body>
     </html>
   );
 }
