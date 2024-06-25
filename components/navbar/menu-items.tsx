@@ -15,9 +15,9 @@ export const MenuItems = () => {
         className="items-center gap-3 hidden md:flex"
         animate={{ x: 0, opacity: 1 }}
         initial={{ x: -100, opacity: 0 }}
-        transition={{ duration: 0.3, delay: 0.3 }}
+        transition={{ duration: 0.25, delay: 1 * 0.25 }}
       >
-        <Item text="Home" href="/" />
+        <Item text="Sobre" href="/" />
         <Item text="Experiencia" href="/experience" />
         <Item text="Projetos" href="/projects" />
         <Item text="Contato" href="/contact" />

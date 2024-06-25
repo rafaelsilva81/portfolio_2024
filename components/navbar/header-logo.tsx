@@ -21,7 +21,7 @@ export const HeaderLogo = () => {
       onClick={() => changeHighlight()}
       animate={{ x: 0, opacity: 1 }}
       initial={{ x: 100, opacity: 0 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.25 }}
       whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
     >
       <div className="hidden md:block">

@@ -3,7 +3,6 @@ import { atomWithStorage } from "jotai/utils";
 export type HighlightColors =
   | "#DC2626"
   | "#F97316"
-  | "#F59E0B"
   | "#16A34A"
   | "#0284C7"
   | "#6366f1"
@@ -12,7 +11,6 @@ export type HighlightColors =
 export const highlightColors: HighlightColors[] = [
   "#DC2626",
   "#F97316",
-  "#F59E0B",
   "#16A34A",
   "#0284C7",
   "#6366f1",

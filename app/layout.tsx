@@ -17,7 +17,7 @@ export default function RootLayout({
           crossOrigin=""
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700;800&display=swap"
           rel="stylesheet"
         />
         <title> Rafael Galdino da Silva </title>
@@ -73,8 +73,10 @@ export default function RootLayout({
       </head>
       <body className="bg-dark p-14 text-white">
         <JotaiProvider>
-          <Navbar />
-          {children}
+          <div className="space-y-12">
+            <Navbar />
+            {children}
+          </div>
         </JotaiProvider>
       </body>
     </html>
