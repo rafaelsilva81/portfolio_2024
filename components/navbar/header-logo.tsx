@@ -20,8 +20,8 @@ export const HeaderLogo = () => {
       className="flex items-center gap-2 cursor-pointer"
       onClick={() => changeHighlight()}
       animate={{ x: 0, opacity: 1 }}
-      initial={{ x: 100, opacity: 0 }}
-      transition={{ duration: 0.25 }}
+      initial={{ x: 200, opacity: 0 }}
+      transition={{ duration: 0.3 }}
       whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
     >
       <div className="hidden md:block">

@@ -43,7 +43,7 @@ export const HighlightedText = ({
         }}
         transition={{
           delay,
-          duration: 0.25,
+          duration: 0.3,
           ease: "easeInOut",
         }}
         className="rounded-sm"
@@ -88,7 +88,7 @@ export const HighlightedIcon = ({
         }}
         transition={{
           delay,
-          duration: 0.25,
+          duration: 0.3,
           ease: "easeInOut",
         }}
         className="rounded-sm"

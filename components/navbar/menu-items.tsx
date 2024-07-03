@@ -4,9 +4,8 @@ import { highlightColorAtom } from "@/lib/highlightColor.atom";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import { useAtom } from "jotai";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import { usePathname } from "next/navigation";
-
 export const MenuItems = () => {
   return (
     <>
@@ -14,8 +13,8 @@ export const MenuItems = () => {
       <motion.div
         className="items-center gap-3 hidden md:flex"
         animate={{ x: 0, opacity: 1 }}
-        initial={{ x: -100, opacity: 0 }}
-        transition={{ duration: 0.25, delay: 1 * 0.25 }}
+        initial={{ x: -200, opacity: 0 }}
+        transition={{ duration: 0.3 }}
       >
         <Item text="Sobre" href="/" />
         <Item text="Experiencia" href="/experience" />
@@ -44,7 +43,7 @@ export const Item = ({ text, href }: { text: string; href: string }) => {
             backgroundColor: isActive ? highlight : "transparent",
           }}
           animate={{ width: isActive ? "100%" : "0%" }}
-          transition={{ duration: 0.25 }}
+          transition={{ duration: 0.3 }}
         />
       </div>
     </Link>
