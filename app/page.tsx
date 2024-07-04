@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 export default function HomePage() {
   return (
-    <main className="space-y-6 pt-12">
+    <main className="space-y-6 pt-14">
       <motion.span
         className="text-3xl font-bold uppercase md:text-5xl"
         animate={{ opacity: 1 }}
@@ -47,7 +47,7 @@ export default function HomePage() {
             Typescript, ReactJS, NextJS, NodeJS, TailwindCSS, Figma, Prisma,
             Google Cloud/AWS, Git
           </HighlightedText>{" "}
-          '' e muito mais.
+          e muito mais.
         </span>
 
         <span className="text-xl text-justify md:text-xl">
