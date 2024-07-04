@@ -8,10 +8,6 @@ import { faFile } from "@fortawesome/free-solid-svg-icons";
 
 import { motion } from "framer-motion";
 
-import { ChevronDown } from "lucide-react";
-
-import { Link } from "next-view-transitions";
-
 export default function HomePage() {
   return (
     <main className="space-y-6 pt-12">
@@ -93,7 +89,7 @@ export default function HomePage() {
         />
       </motion.div>
 
-      <Link href="/experience">
+      {/* <Link href="/experience">
         <motion.div
           className="w-full flex flex-1 justify-center items-center pt-6 text-lg"
           animate={{ opacity: 1 }}
@@ -102,7 +98,7 @@ export default function HomePage() {
         >
           Ver mais <ChevronDown size={32} />
         </motion.div>
-      </Link>
+      </Link> */}
     </main>
   );
 }
